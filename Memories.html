@@ -5,309 +5,107 @@
  <meta name="viewport" content="width=device-width,initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no"> 
  <title>Happy Birthday</title>
  <link rel="stylesheet" href="css/jquery.fullPage.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
  <link rel="stylesheet" href="css/memories.css">
- <style>
-    .ly-imgbox11 {
-        text-align: center; /* 水平居中 */
-    }
-
-    .ly-img11 {
-        display: inline-block; /* 使图片居中 */
-    }
-
-    /* 添加媒体查询以适应移动端 */
-    @media (max-width: 768px) {
-        .ly-img11 {
-            width: 100%; /* 使图片在移动端宽度为100% */
-            height: auto; /* 保持图片比例 */
-        }
-    }
-
-    .ly-imgbox23 {
-        text-align: center; /* 水平居中 */
-    }
-
-    .ly-img23 {
-        display: inline-block; /* 使图片居中 */
-        width: auto; /* 保持图片宽度 */
-        height: auto; /* 保持图片高度 */
-        max-width: 100%; /* 限制图片最大宽度 */
-        max-height: 100%; /* 限制图片最大高度 */
-    }
-
-    /* 添加媒体查询以适应移动端 */
-    @media (max-width: 768px) {
-        .ly-img23 {
-            width: 100%; /* 使图片在移动端宽度为100% */
-            height: auto; /* 保持图片比例 */
-        }
-    }
-
-    .ly-imgbox22 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        max-width: 90%;
-        padding: 20px 0;
-    }
-
-    .ly-imgbox22 a {
-        width: calc(45% - 10px);
-        display: block;
-    }
-
-    .ly-img22 {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
-    }
-
-    .ly-img22:hover {
-        transform: scale(1.02);
-    }
-
-    @media screen and (max-width: 768px) {
-        .ly-imgbox22 {
-            flex-direction: column;
-            gap: 15px;
-        }
-        
-        .ly-imgbox22 a {
-            width: 100%;
-            max-width: 300px;
-        }
-    }
-
-    /* 视频容器样式 */
-    .video-container {
-        width: 100%;
-        max-width: 600px;
-        margin: 20px auto 0;
-    }
-
-    .ly-video22 {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    @media screen and (max-width: 768px) {
-        .video-container {
-            max-width: 100%;
-            padding: 0 15px;
-        }
-    }
-
-    /* 第四屏居中样式 */
-    .section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* 使每一屏的高度为视口高度 */
-    }
-
-    .ly-box82 {
-        width: 80%;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        text-align: center;
-        transition: margin-top 0.3s ease;
-    }
-
-    .ly-txt13 {
-        font-size: 24px;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-
-    .ly-txt84 {
-        font-size: 16px;
-        line-height: 1.8;
-        text-align: center;
-    }
-
-    .ly-txt84 p {
-        margin-bottom: 15px;
-    }
-
-    .ly-txt15 {
-        margin-top: 20px;
-    }
-
-    .ly-txt15 p {
-        margin-bottom: 15px;
-        line-height: 1.8;
-        font-size: 18px;
-        color: #333;
-    }
-
-    /* 移动端适配 */
-    @media screen and (max-width: 768px) {
-        .ly-box82 {
-            width: 90%;
-            padding: 15px;
-        }
-
-        .ly-txt13 {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        .ly-txt84 {
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        .ly-txt84 p {
-            margin-bottom: 10px;
-        }
-
-        .ly-txt15 p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-    }
-
-    /* 第四屏文字样式 */
-    .ly-txt11 {
-        text-align: center; /* 使文字居中 */
-    }
-
-    .ly-txt11 p {
-        font-size: 18px; /* 修改文字大小 */
-        line-height: 1.6; /* 修改行高 */
-        margin-bottom: 10px; /* 修改段落间距 */
-    }
-
-    /* 移动端适配 */
-    @media screen and (max-width: 768px) {
-        .ly-txt11 p {
-            font-size: 16px; /* 修改移动端文字大小 */
-            line-height: 1.4; /* 修改移动端行高 */
-            margin-bottom: 8px; /* 修改移动端段落间距 */
-        }
-    }
-</style>
 </head>
 
 <body>
   <!-- 背景音乐 -->
   <div style="display:none">
     <!-- 网易云外链 -->
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=480353&auto=1&height=66"></iframe>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://dlink.host/musics/aHR0cHM6Ly9vbmVkcnYtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvc3Rvcl9vbmVkcnZfb25taWNyb3NvZnRfY29tL0VZcldzSnZZTHJkSnRMd3hvbXJrQXpnQlhyODhpWG9BalhQaEJQeEdPQzJpVXc.mp3"></iframe>
   </div>
 <div class="bgcolor">
   <div style="z-index:100;" id="dowebok">
-<!--第一屏-->
-<div class="section">
-    <div class="timeline"></div>
-    <div class="timepoint11"></div>
-    <div class="ly-box11">
-        <div class="ly-txt11">
-            2024年6月30号
-        </div>
-        <div class="ly-txt12">
-            我们相识TT语音
-        </div>
-        <!-- 图片区域 -->
-        <div class="ly-imgbox01 clickable-img">
-            <a href="img/img (1).jpg" data-lightbox="photo1" data-title="相识TT语音">
-                <img class="ly-img01" src="img/img (1).jpg" alt="相识">
-            </a>
-        </div>
-    </div>
-</div>
-
-
       <!--第二屏-->
+
       <div class="section">
           <div class="timeline"></div>
-          <div class="timepoint21"></div>
-          <div class="ly-box21">
-              <div class="ly-txt21">
+          <div class="timepoint11"></div>
+          <div class="ly-box11">
+              <div class="ly-txt11">
+                2024年6月30号
+            </div>
+              <div class="ly-txt12">
+                我们相识TT语音
+            </div>
+              <div class="ly-imgbox11">
+                <img class="ly-img11" src="img/img (1).jpg">
+              </div>
+          </div>
+          <div class="ly-triangle11"></div>
+
+          <div class="ly-box12">
+              <div class="ly-txt13">
                 7月5号我们正式在一起啦
               </div>
-              <div class="ly-txt24">
-                 <p> </p>
-                 <p>我们几乎天天挂着语音睡觉</p>
+              <div class="ly-txt14">
+			     <p>我们几乎天天挂着语音睡觉</p>
               </div>
-              <div class="ly-imgbox21">
-                <a href="img/img (2).jpg" data-lightbox="photo3" data-title="回忆">
-                    <img class="ly-img21" src="img/img (2).jpg" alt="回忆">
-                </a>
+              <div class="ly-imgbox11">
+                <img class="ly-img11" src="img/img (2).jpg">
               </div>
           </div>
-          <div class="ly-triangle21"></div>
-
-          <div class="ly-box22">
-              <div class="ly-txt23">
-                你会经常带我上分
-                会回家接我
-              </div>
-              <div class="ly-txt24">
-                  <p> </p>
-              </div>
-              <div class="ly-imgbox22">
-                <!-- 为每张图片添加 lightbox 支持 -->
-                <a href="img/img (3).jpg" data-lightbox="photo4" data-title="一起打游戏">
-                    <img class="ly-img22" src="img/img (3).jpg" alt="游戏">
-                </a>
-                <a href="img/img (4).jpg" data-lightbox="photo4" data-title="一起打游戏">
-                    <img class="ly-img22" src="img/img (4).jpg" alt="游戏">
-                </a>
-                <!-- 添加视频元素 -->
-                <div class="video-container">
-                    <video class="ly-video22" controls>
-                        <source src="video/img (5).mp4" type="video/mp4">
-                        您的浏览器不支持视频播放。
-                    </video>
-                </div>
-              </div>
-          </div>
-          <div class="ly-triangle22"></div>
+          <div class="ly-triangle12"></div>
       </div>
 
-  <!--第三屏-->
+      <!--第四屏-->
+
+      <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint31"></div>
+          <div class="ly-box31">
+              <div class="ly-txt31">
+                你会经常带我上分
+              </div>
+              <div class="ly-txt32">
+
+            </div>
+              <div class="ly-imgbox31">
+                <img class="ly-img31" src="img/img (3).jpg">
+              </div>
+          </div>
+          <div class="ly-triangle31"></div>
+
+          <div class="ly-box32">
+              <div class="ly-txt33">
+                  201X-1X-2X
+              </div>
+              <div class="ly-txt34">
+                 <p>会回家接我</p>
+              </div>
+              <div class="ly-imgbox31">
+                <img class="ly-img31" src="img/img (4).jpg" onclick="playVideo(this)" data-video="video/img (5).mp4">                </div>
+          </div>
+          <div class="ly-triangle32"></div>
+      </div>
+
+  <!--第五屏-->
   <div class="section">
           <div class="timeline"></div>
           <div class="timepoint21"></div>
           <div class="ly-box52">
               <div class="ly-txt21">
-                  2024-02-13
-              </div>
+                2024-02-13
+            </div>
               <div class="ly-txt22">
-                 <p>你说你想见面，于是2月13号早上我们见面啦</p>
-                 <p>来的时候你很细心的照顾我，大大小小的事都是你亲力亲为</p>
+                <p>你说你想见面，于是2月13号早上我们见面啦</p>
+                <p>来的时候你很细心的照顾我，大大小小的事都是你亲力亲为</p>
               </div>
               <div class="ly-imgbox21">
-                <a href="img/img (6).jpg" data-lightbox="photo6" data-title="相见">
-                    <img class="ly-img21" src="img/img (6).jpg" alt="相见">
-                </a>
+                <img class="ly-img21" src="img/img (6).jpg">
               </div>
           </div>
           <div class="ly-triangle21"></div>
 
           <div class="ly-box22">
               <div class="ly-txt23">
-                  
+                你总是会很容易的关照我的情绪，也会不耐烦的一遍遍问我
               </div>
               <div class="ly-txt51">
-                  <p>你总是会很容易的关照我的情绪，也会不耐烦的一遍遍问我</p>
-              </div>
+
+            </div>
               <div class="ly-imgbox22">
-                <a href="img/img (7).jpg" data-lightbox="photo7" data-title="回忆">
-                    <img class="ly-img22" src="img/img (7).jpg" alt="回忆">
-                </a>
+                <img class="ly-img22" src="img/img (7).jpg">
               </div>
           </div>
           <div class="ly-triangle22"></div>
@@ -317,37 +115,38 @@
                 我说想学化妆也会很支持我第一时间把我包太小的问题解决掉
               </div>
               <div class="ly-txt26">
-              </div>
+
+            </div>
               <div class="ly-imgbox23">
-                <a href="img/img (8).jpg" data-lightbox="photo8" data-title="化妆包">
-                    <img class="ly-img23" src="img/img (8).jpg" alt="化妆包">
-                </a>
+                <img class="ly-img23" src="img/img (8).jpg">
               </div>
           </div>
           <div class="ly-triangle23"></div>
       </div>
 
-        <!--第四屏-->
+		<!--第十屏-->
 
-        <div class="section">
-            <div class="timeline"></div>
-            <div class="timepoint13"></div>
-            <div class="ly-box11">
-                <div class="ly-txt11">
-                    <p class="ly-stxt01">我有一个很好的男朋友，他叫侯建桐，我们已经在一起很长时间了</p>
-                    <p class="ly-stxt02">他是我见过最坚强，最勇敢的男孩子，我现实身材不好长相一般</p>
-                    <p class="ly-stxt03">他见到我也没有一丝一毫的嫌弃，反而会鼓励我，陪着我变好</p>
-                    <p class="ly-stxt04">我很爱他，尽管我们会因为些小事吵架，有的时候也会闹分手</p>
-                    <p class="ly-stxt05">可我们最后还会在一起，他对我来说不仅仅是爱人吧，同样也是引领我的老师</p>
-                    <p class="ly-stxt06">我很幸运我可以遇到他，也很庆幸吵过那么多次架我们没有放弃对方</p>
-                    <p class="ly-stxt07">希望桐桐以后不要那么焦虑，我很爱你，祝你生日快乐</p>
-                </div>
-                <div class="ly-txt11">
-                
-                </div>
+		      <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint11"></div>
+          <div class="ly-box11">
+              <div class="ly-txt12">
+                我有一个很好的男朋友，他叫侯建桐，我们已经在一起很长时间了
+                他是我见过最坚强，最勇敢的男孩子，我现实身材不好长相一般
+                他见到我也没有一丝一毫的嫌弃，反而会鼓励我，陪着我变好
+                我很爱他，尽管我们会因为些小事吵架，有的时候也会闹分手
+                可我们最后还会在一起，他对我来说不仅仅是爱人吧，同样也是引领我的老师
+                我很幸运我可以遇到他，也很庆幸吵过那么多次架我们没有放弃对方
+                希望桐桐以后不要那么焦虑，我很爱你，祝你生日快乐
+
+              </div>
+              <div class="ly-txt84">
+
             </div>
-            <div class="ly-triangle12"></div>
-        </div>
+          </div>
+          <div class="ly-triangle12"></div>
+      </div>
+
        </div>
   <!--动态方块-->
   <ul class="bg-bubbles">
@@ -367,16 +166,11 @@
   <!-- <audio muted src="music/1.mp3" autoplay="autoplay" loop="loop"></audio> -->
 
 <script src="js/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 <script src="js/jquery.fullPage.min.js"></script>
+<!-- <script src="js/auto-play.js"></script> -->
 <script src="js/memories.js"></script>
-<script>
-lightbox.option({
-    'albumLabel': '查看照片',
-    'wrapAround': false,  // 禁用循环
-    'fadeDuration': 300,
-    'showImageNumberLabel': false  // 不显示图片计数
-});
-</script>
+<div class="image-preview" id="imagePreview">
+  <img id="previewImage" src="" alt="预览图">
+</div>
 </body>
 </html>
